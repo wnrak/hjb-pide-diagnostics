@@ -1,0 +1,33 @@
+{
+  "diffusion_only_merton": {
+    "u_star": 0.7500000000000918,
+    "F_at_u_star": 0.042499999999999996,
+    "analytical": 0.75
+  },
+  "vg_1d_benchmark": {
+    "u_star_scalar": 0.352064625070211,
+    "F_at_u_star": 0.030678391773751246,
+    "reduction_vs_merton_pct": 53.05804999063853,
+    "elapsed_sec": 0.1198272705078125,
+    "reference_fd_v1": 0.347,
+    "reference_fd_v2": 0.344,
+    "reference_neural_mean": 0.344,
+    "reference_neural_std": 0.006,
+    "scalar_vs_fd_v1_pct": 1.4595461297438181,
+    "scalar_vs_fd_v2_pct": 2.344367752968329,
+    "scalar_vs_neural_pct": 2.344367752968329
+  },
+  "vg_2d_benchmark": {
+    "u1_star_scalar": 0.345190071742188,
+    "u2_star_scalar": 0.2524580110784151,
+    "cash_scalar": 0.4023519171793969,
+    "G_at_u_star": 0.03898714506352319,
+    "reduction_u1_vs_merton_pct": 34.49903762007818,
+    "reduction_u2_vs_merton_pct": 59.606718227453584,
+    "elapsed_sec": 0.02388310432434082,
+    "reference_neural_u1_mean": 0.348,
+    "reference_neural_u2_mean": 0.258,
+    "scalar_vs_neural_u1_pct": 0.807450648796539,
+    "scalar_vs_neural_u2_pct": 2.1480577215445416
+  }
+}

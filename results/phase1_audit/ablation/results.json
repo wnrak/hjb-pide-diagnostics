@@ -1,0 +1,415 @@
+{
+  "mle_results_path": "results/hjb_sp500_mle/results.json",
+  "problem": {
+    "r": 0.02,
+    "mu_annual": 0.10398875277293343,
+    "sigma_annual": 0.13179001175593705,
+    "gamma": 2.0,
+    "merton_ratio": 2.417832121264109,
+    "trading_days": 252,
+    "diffusion_scale": 0.75
+  },
+  "seeds": [
+    42,
+    123,
+    999
+  ],
+  "raw_runs": [
+    {
+      "variant": "full_method",
+      "runtime_sec": 134.92768429219723,
+      "control": 0.9947013854980469,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.1343919135063747,
+        "std": 0.19069134890549377,
+        "var_5": 0.8508959763654496,
+        "cvar_5": 0.8002348187882055
+      },
+      "losses": {
+        "final_total_loss": 0.00024113900144584477,
+        "final_interior_loss": 0.00011025647108908743,
+        "final_terminal_loss": 9.910660992318299e-06,
+        "final_optimality_loss": 3.177590770064853e-05,
+        "interior_loss_std_last_25": 1.5049375572853033e-05,
+        "total_loss_std_last_25": 0.0002555654998832606
+      },
+      "seed": 42
+    },
+    {
+      "variant": "no_importance_weighting",
+      "runtime_sec": 168.0182588333264,
+      "control": 0.9894103407859802,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.1297143310782927,
+        "std": 0.18739996197059194,
+        "var_5": 0.851209822635793,
+        "cvar_5": 0.7976822003440208
+      },
+      "losses": {
+        "final_total_loss": 0.0019990899600088596,
+        "final_interior_loss": 6.312921414064476e-06,
+        "final_terminal_loss": 0.00018715971964411438,
+        "final_optimality_loss": 0.00012117961887270212,
+        "interior_loss_std_last_25": 1.6641366588954878e-06,
+        "total_loss_std_last_25": 0.0015791883130964342
+      },
+      "seed": 42
+    },
+    {
+      "variant": "no_compensation",
+      "runtime_sec": 129.9471899168566,
+      "control": 0.599704384803772,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.083665718989805,
+        "std": 0.10774150515946211,
+        "var_5": 0.9180140884681367,
+        "cvar_5": 0.8787366283831062
+      },
+      "losses": {
+        "final_total_loss": 0.10200206190347672,
+        "final_interior_loss": 0.00183816475328058,
+        "final_terminal_loss": 6.069210576242767e-05,
+        "final_optimality_loss": 0.09955697506666183,
+        "interior_loss_std_last_25": 0.0016934888324424402,
+        "total_loss_std_last_25": 0.0976233754230508
+      },
+      "seed": 42
+    },
+    {
+      "variant": "no_weight_clipping",
+      "runtime_sec": 115.4951524999924,
+      "control": 0.9976291060447693,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.1329593815190864,
+        "std": 0.1889347917394296,
+        "var_5": 0.8490358562983702,
+        "cvar_5": 0.7910981034821094
+      },
+      "losses": {
+        "final_total_loss": 0.00037686745054088533,
+        "final_interior_loss": 4.791927494807169e-05,
+        "final_terminal_loss": 2.9024049581494182e-05,
+        "final_optimality_loss": 3.870766522595659e-05,
+        "interior_loss_std_last_25": 1.3605247557434387e-05,
+        "total_loss_std_last_25": 0.001034051354833041
+      },
+      "seed": 42
+    },
+    {
+      "variant": "fixed_merton_control",
+      "runtime_sec": 29.63953012507409,
+      "control": 2.4178318977355957,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.312728013108356,
+        "std": 0.5580787824234579,
+        "var_5": 0.6105861552608973,
+        "cvar_5": 0.5254302602806572
+      },
+      "losses": {
+        "final_total_loss": 0.002111786277964711,
+        "final_interior_loss": 8.844141120789573e-05,
+        "final_terminal_loss": 0.00020233448594808578,
+        "final_optimality_loss": 0.0,
+        "interior_loss_std_last_25": 2.8067917216717465e-05,
+        "total_loss_std_last_25": 0.015232514652726086
+      },
+      "fixed_control": 2.417832121264109,
+      "seed": 42
+    },
+    {
+      "variant": "full_method",
+      "runtime_sec": 84.25730537483469,
+      "control": 0.9869859218597412,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.1270985196649803,
+        "std": 0.18087607559951446,
+        "var_5": 0.8553996456112825,
+        "cvar_5": 0.7939018865655127
+      },
+      "losses": {
+        "final_total_loss": 0.001243774313479662,
+        "final_interior_loss": 5.745625094277784e-05,
+        "final_terminal_loss": 9.925266931531951e-05,
+        "final_optimality_loss": 0.000193791463971138,
+        "interior_loss_std_last_25": 3.27542314580164e-05,
+        "total_loss_std_last_25": 0.0009976358138404993
+      },
+      "seed": 123
+    },
+    {
+      "variant": "no_importance_weighting",
+      "runtime_sec": 83.92701316718012,
+      "control": 0.9907417893409729,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.136062319712659,
+        "std": 0.19010179081157988,
+        "var_5": 0.8540015255069091,
+        "cvar_5": 0.7969047045265926
+      },
+      "losses": {
+        "final_total_loss": 0.0002833417966030538,
+        "final_interior_loss": 1.1735740372387227e-05,
+        "final_terminal_loss": 1.794628769857809e-05,
+        "final_optimality_loss": 9.21431856113486e-05,
+        "interior_loss_std_last_25": 5.311820305332842e-06,
+        "total_loss_std_last_25": 0.0005851574017256448
+      },
+      "seed": 123
+    },
+    {
+      "variant": "no_compensation",
+      "runtime_sec": 81.98667066683993,
+      "control": 0.6879320740699768,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.0935672400741756,
+        "std": 0.12553562551913025,
+        "var_5": 0.8993722784427913,
+        "cvar_5": 0.8567854266476295
+      },
+      "losses": {
+        "final_total_loss": 0.10321782529354095,
+        "final_interior_loss": 0.003044613404199481,
+        "final_terminal_loss": 2.083464278257452e-05,
+        "final_optimality_loss": 0.09996486455202103,
+        "interior_loss_std_last_25": 0.005481052411511391,
+        "total_loss_std_last_25": 0.15726971022527622
+      },
+      "seed": 123
+    },
+    {
+      "variant": "no_weight_clipping",
+      "runtime_sec": 81.0067112906836,
+      "control": 0.9974443912506104,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.1308637550747211,
+        "std": 0.19036060788068385,
+        "var_5": 0.8483879929224417,
+        "cvar_5": 0.789015499182686
+      },
+      "losses": {
+        "final_total_loss": 0.0001812025875551626,
+        "final_interior_loss": 2.897111335187219e-05,
+        "final_terminal_loss": 1.4514016584143974e-05,
+        "final_optimality_loss": 7.0913138188188896e-06,
+        "interior_loss_std_last_25": 4.472462077829028e-06,
+        "total_loss_std_last_25": 0.0015488736099950897
+      },
+      "seed": 123
+    },
+    {
+      "variant": "fixed_merton_control",
+      "runtime_sec": 29.72815866721794,
+      "control": 2.4178318977355957,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.3097092041462013,
+        "std": 0.5450855485121165,
+        "var_5": 0.6165592641668617,
+        "cvar_5": 0.5349518204933729
+      },
+      "losses": {
+        "final_total_loss": 0.0002453040215186775,
+        "final_interior_loss": 0.00013236426457297057,
+        "final_terminal_loss": 1.1293976967863273e-05,
+        "final_optimality_loss": 0.0,
+        "interior_loss_std_last_25": 7.40911557781535e-05,
+        "total_loss_std_last_25": 0.0013230371971725027
+      },
+      "fixed_control": 2.417832121264109,
+      "seed": 123
+    },
+    {
+      "variant": "full_method",
+      "runtime_sec": 80.53621899988502,
+      "control": 0.9913778901100159,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.1341160403865664,
+        "std": 0.1879936894713983,
+        "var_5": 0.8559865874936978,
+        "cvar_5": 0.8020615629922571
+      },
+      "losses": {
+        "final_total_loss": 0.03972991928458214,
+        "final_interior_loss": 1.0784589903778397e-05,
+        "final_terminal_loss": 0.003963249735534191,
+        "final_optimality_loss": 8.663618064019829e-05,
+        "interior_loss_std_last_25": 1.9758362122624687e-06,
+        "total_loss_std_last_25": 0.007730928183078081
+      },
+      "seed": 999
+    },
+    {
+      "variant": "no_importance_weighting",
+      "runtime_sec": 80.66859612520784,
+      "control": 0.9935235381126404,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.1332529471983848,
+        "std": 0.18917348285087937,
+        "var_5": 0.8473548400931552,
+        "cvar_5": 0.7934386575103781
+      },
+      "losses": {
+        "final_total_loss": 0.0003678404609672725,
+        "final_interior_loss": 4.284482929506339e-05,
+        "final_terminal_loss": 2.7108479116577655e-05,
+        "final_optimality_loss": 5.3910858696326613e-05,
+        "interior_loss_std_last_25": 2.3551683999231067e-05,
+        "total_loss_std_last_25": 0.02278473130761498
+      },
+      "seed": 999
+    },
+    {
+      "variant": "no_compensation",
+      "runtime_sec": 81.73388462467119,
+      "control": 0.8811988234519958,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.1193225049924636,
+        "std": 0.16429266456842473,
+        "var_5": 0.8696304339081863,
+        "cvar_5": 0.8183568747118235
+      },
+      "losses": {
+        "final_total_loss": 0.01849493756890297,
+        "final_interior_loss": 0.003168176393955946,
+        "final_terminal_loss": 1.2779220924130641e-05,
+        "final_optimality_loss": 0.015198968350887299,
+        "interior_loss_std_last_25": 0.004655687510506398,
+        "total_loss_std_last_25": 0.329135783621768
+      },
+      "seed": 999
+    },
+    {
+      "variant": "no_weight_clipping",
+      "runtime_sec": 80.41390737472102,
+      "control": 0.999626874923706,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.1339061971433684,
+        "std": 0.18985313410757648,
+        "var_5": 0.8533602413102511,
+        "cvar_5": 0.7931408820762197
+      },
+      "losses": {
+        "final_total_loss": 0.00011097482638433576,
+        "final_interior_loss": 1.787893233995419e-05,
+        "final_terminal_loss": 9.292763024859596e-06,
+        "final_optimality_loss": 1.6826503212996613e-07,
+        "interior_loss_std_last_25": 5.767074915123994e-06,
+        "total_loss_std_last_25": 0.0020483763565727125
+      },
+      "seed": 999
+    },
+    {
+      "variant": "fixed_merton_control",
+      "runtime_sec": 30.067216833122075,
+      "control": 2.4178318977355957,
+      "wealth_metrics_under_common_vg_model": {
+        "mean": 1.3251292396863235,
+        "std": 0.5584051855714365,
+        "var_5": 0.6237118138180818,
+        "cvar_5": 0.5377107722127886
+      },
+      "losses": {
+        "final_total_loss": 0.0006998087046667933,
+        "final_interior_loss": 0.0003426325274631381,
+        "final_terminal_loss": 3.571761408238672e-05,
+        "final_optimality_loss": 0.0,
+        "interior_loss_std_last_25": 0.00014810178284608576,
+        "total_loss_std_last_25": 0.0021380627058390014
+      },
+      "fixed_control": 2.417832121264109,
+      "seed": 999
+    }
+  ],
+  "variants": [
+    {
+      "variant": "full_method",
+      "n_seeds": 3,
+      "control_mean": 0.991021732489268,
+      "control_std": 0.0038700427616005506,
+      "runtime_sec_mean": 99.90706955563898,
+      "runtime_sec_std": 30.385756751269,
+      "final_interior_loss_mean": 5.9499103978547886e-05,
+      "final_interior_loss_std": 4.9767396184956024e-05,
+      "final_total_loss_mean": 0.013738277533169216,
+      "final_total_loss_std": 0.0225150038883536,
+      "interior_loss_std_last_25_mean": 1.6593147747710634e-05,
+      "interior_loss_std_last_25_std": 1.5447162453727885e-05,
+      "var_5_mean": 0.8540940698234767,
+      "var_5_std": 0.0027851349191807405,
+      "cvar_5_mean": 0.7987327561153251,
+      "cvar_5_std": 0.004282198506869701
+    },
+    {
+      "variant": "no_importance_weighting",
+      "n_seeds": 3,
+      "control_mean": 0.9912252227465311,
+      "control_std": 0.0020987803494454376,
+      "runtime_sec_mean": 110.87128937523812,
+      "runtime_sec_std": 49.51753637942431,
+      "final_interior_loss_mean": 2.029783036050503e-05,
+      "final_interior_loss_std": 1.9713627572821752e-05,
+      "final_total_loss_mean": 0.0008834240725263953,
+      "final_total_loss_std": 0.000967118289269136,
+      "interior_loss_std_last_25_mean": 1.0175880321153134e-05,
+      "interior_loss_std_last_25_std": 1.1726486772345075e-05,
+      "var_5_mean": 0.850855396078619,
+      "var_5_std": 0.0033374871364058993,
+      "cvar_5_mean": 0.7960085207936638,
+      "cvar_5_std": 0.0022592637977037196
+    },
+    {
+      "variant": "no_compensation",
+      "n_seeds": 3,
+      "control_mean": 0.7229450941085815,
+      "control_std": 0.1439764335807686,
+      "runtime_sec_mean": 97.88924840278924,
+      "runtime_sec_std": 27.76327944939684,
+      "final_interior_loss_mean": 0.0026836515171453357,
+      "final_interior_loss_std": 0.0007348148433532504,
+      "final_total_loss_mean": 0.07457160825530688,
+      "final_total_loss_std": 0.0485676257048736,
+      "interior_loss_std_last_25_mean": 0.003943409584820076,
+      "interior_loss_std_last_25_std": 0.0019917114120618497,
+      "var_5_mean": 0.8956722669397048,
+      "var_5_std": 0.02440311600977183,
+      "cvar_5_mean": 0.851292976580853,
+      "cvar_5_std": 0.03056229571143532
+    },
+    {
+      "variant": "no_weight_clipping",
+      "n_seeds": 3,
+      "control_mean": 0.9982334574063619,
+      "control_std": 0.001210264091852047,
+      "runtime_sec_mean": 92.30525705513234,
+      "runtime_sec_std": 20.085225718879816,
+      "final_interior_loss_mean": 3.158977354663269e-05,
+      "final_interior_loss_std": 1.5190410854054844e-05,
+      "final_total_loss_mean": 0.00022301495482679456,
+      "final_total_loss_std": 0.00013778943151728805,
+      "interior_loss_std_last_25_mean": 7.948261516795802e-06,
+      "interior_loss_std_last_25_std": 4.9416721762584665e-06,
+      "var_5_mean": 0.8502613635103544,
+      "var_5_std": 0.0027031859818531143,
+      "cvar_5_mean": 0.791084828247005,
+      "cvar_5_std": 0.0020627234857017148
+    },
+    {
+      "variant": "fixed_merton_control",
+      "n_seeds": 3,
+      "control_mean": 2.4178318977355957,
+      "control_std": 0.0,
+      "runtime_sec_mean": 29.81163520847137,
+      "runtime_sec_std": 0.22573265108299512,
+      "final_interior_loss_mean": 0.00018781273441466814,
+      "final_interior_loss_std": 0.00013586456676268013,
+      "final_total_loss_mean": 0.0010189663347167273,
+      "final_total_loss_std": 0.0009733114599249755,
+      "interior_loss_std_last_25_mean": 8.342028528031891e-05,
+      "interior_loss_std_last_25_std": 6.055829189659696e-05,
+      "var_5_mean": 0.616952411081947,
+      "var_5_std": 0.0065716551577649366,
+      "cvar_5_mean": 0.532697617662273,
+      "cvar_5_std": 0.006443121613908113,
+      "fixed_control": 2.417832121264109
+    }
+  ]
+}

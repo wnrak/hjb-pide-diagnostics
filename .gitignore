@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+sp500_user.csv
+sp500_returns_local.csv
+results/**/.ipynb_checkpoints/

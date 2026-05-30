@@ -1,0 +1,44 @@
+{
+  "mle_results_path": "results/hjb_sp500_mle/results.json",
+  "problem": {
+    "r": 0.02,
+    "mu_annual": 0.10398875277293343,
+    "sigma_annual": 0.13179001175593705,
+    "gamma": 2.0,
+    "merton_ratio": 2.417832121264109,
+    "trading_days": 252,
+    "diffusion_scale": 0.75
+  },
+  "controls": {
+    "diffusion_only": 0.9974203705787659,
+    "vg_mle": 0.9492743015289307,
+    "allocation_reduction_pct": 4.827058928212769
+  },
+  "vg_measure": {
+    "sigma_daily": 0.010507208526347383,
+    "theta_daily": -0.00032223495887404675,
+    "nu_daily": 1.1791598945684822,
+    "truncation_min": 0.005,
+    "truncation_max": 0.2,
+    "intensity_scale": 252.0,
+    "effective_annual_intensity": 189.05058109760284,
+    "expected_jump_effect": [
+      -0.07098145969212055,
+      0.024349822924705222
+    ]
+  },
+  "wealth_metrics_under_common_vg_model": {
+    "diffusion_policy": {
+      "mean": 1.1304144099767501,
+      "std": 0.18715878092964525,
+      "var_5": 0.8523165790903989,
+      "cvar_5": 0.7940923984209213
+    },
+    "vg_policy": {
+      "mean": 1.1248489163698716,
+      "std": 0.1771321917074112,
+      "var_5": 0.8602027071705936,
+      "cvar_5": 0.8042358130245018
+    }
+  }
+}

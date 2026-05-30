@@ -1,0 +1,38 @@
+{
+  "description": "Variance Gamma MLE parameters used in the paper's S&P 500 calibration (Appendix: Empirical calibration sanity check). Stored so the reported numbers are auditable WITHOUT redistributing third-party S&P 500 index data. To regenerate these from scratch, supply your own lawfully obtained daily close series; see data/README.md.",
+  "data_window": {
+    "index": "S&P 500 (user-supplied; not redistributed here)",
+    "frequency": "daily",
+    "date_start": "2010-01-04",
+    "date_end": "2023-12-29",
+    "n_observations": 3522
+  },
+  "sample_moments": {
+    "n": 3522,
+    "mean_daily": 0.00041265378084497393,
+    "std_daily": 0.011069320520269467,
+    "mean_annualized": 0.10398875277293343,
+    "vol_annualized": 0.17572001567458273,
+    "skewness": -0.7221145467645149,
+    "excess_kurtosis": 13.171876028699948,
+    "min": -0.1276521974728174,
+    "max": 0.0896832325179632
+  },
+  "vg_mle": {
+    "parameterization": "Madan (sigma_VG, theta, nu); daily units",
+    "mu": 0.0007350841184918953,
+    "sigma": 0.010507208526347383,
+    "theta": -0.00032223495887404675,
+    "nu": 1.1791598945684822,
+    "log_likelihood": 11378.127253060811,
+    "aic": -22748.254506121622,
+    "bic": -22723.587368965396
+  },
+  "standard_errors": {
+    "method": "finite-difference Hessian at the MLE",
+    "mu": 0.00013082630696353265,
+    "sigma": 0.00019799990048343494,
+    "theta": 0.00022022976285272463,
+    "nu": 0.058609292583184765
+  }
+}

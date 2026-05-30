@@ -1,0 +1,177 @@
+{
+  "neural_diffusion_u": 0.7619404673576355,
+  "neural_diffusion_std": 0.010854256320208597,
+  "neural_vg_u": 0.47543853521347046,
+  "neural_vg_std": 0.008191493310449036,
+  "fd_diffusion_grid_refinement": [
+    {
+      "label": "diff_50x25",
+      "n_x": 50,
+      "n_t": 25,
+      "n_z": 50,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 20,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.7368421052631579,
+      "elapsed_sec": 0.06148195266723633
+    },
+    {
+      "label": "diff_100x50",
+      "n_x": 100,
+      "n_t": 50,
+      "n_z": 50,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 20,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.736842105263158,
+      "elapsed_sec": 0.17278313636779785
+    },
+    {
+      "label": "diff_200x100",
+      "n_x": 200,
+      "n_t": 100,
+      "n_z": 50,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 20,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.7368421052631579,
+      "elapsed_sec": 0.6343667507171631
+    },
+    {
+      "label": "diff_400x200",
+      "n_x": 400,
+      "n_t": 200,
+      "n_z": 50,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 20,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.7368421052631579,
+      "elapsed_sec": 2.5686259269714355
+    }
+  ],
+  "fd_vg_grid_refinement": [
+    {
+      "label": "vg_50x25x25",
+      "n_x": 50,
+      "n_t": 25,
+      "n_z": 25,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 20,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.3684210526315789,
+      "elapsed_sec": 1.5261311531066895
+    },
+    {
+      "label": "vg_100x50x50",
+      "n_x": 100,
+      "n_t": 50,
+      "n_z": 50,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 20,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.368421052631579,
+      "elapsed_sec": 13.600954055786133
+    },
+    {
+      "label": "vg_200x100x100",
+      "n_x": 200,
+      "n_t": 100,
+      "n_z": 100,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 20,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.3684210526315789,
+      "elapsed_sec": 100.20322585105896
+    },
+    {
+      "label": "vg_400x200x200",
+      "n_x": 400,
+      "n_t": 200,
+      "n_z": 200,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 20,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.3684210526315789,
+      "elapsed_sec": 1020.1225290298462
+    }
+  ],
+  "fd_u_grid_sweep": [
+    {
+      "label": "vg_nu=20_taylor",
+      "n_x": 200,
+      "n_t": 100,
+      "n_z": 100,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 20,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.3684210526315789,
+      "elapsed_sec": 101.54860496520996,
+      "gap_vs_neural_pct": 22.509215104711906
+    },
+    {
+      "label": "vg_nu=50_taylor",
+      "n_x": 200,
+      "n_t": 100,
+      "n_z": 100,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 50,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.3469387755102041,
+      "elapsed_sec": 287.8564441204071,
+      "gap_vs_neural_pct": 27.027628218139782
+    },
+    {
+      "label": "vg_nu=100_taylor",
+      "n_x": 200,
+      "n_t": 100,
+      "n_z": 100,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 100,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.3535353535353536,
+      "elapsed_sec": 601.4497671127319,
+      "gap_vs_neural_pct": 25.640155908561912
+    },
+    {
+      "label": "vg_nu=200_taylor",
+      "n_x": 200,
+      "n_t": 100,
+      "n_z": 100,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 200,
+      "use_v_interpolation": false,
+      "u_at_0_1": 0.35175879396984927,
+      "elapsed_sec": 1258.5979299545288,
+      "gap_vs_neural_pct": 26.013823466810354
+    },
+    {
+      "label": "vg_nu=200_interp",
+      "n_x": 200,
+      "n_t": 100,
+      "n_z": 100,
+      "z_min": -0.99,
+      "z_max": 0.99,
+      "n_u_grid": 200,
+      "use_v_interpolation": true,
+      "u_at_0_1": 0.35175879396984927,
+      "elapsed_sec": 1730.2654271125793,
+      "gap_vs_neural_pct": 26.013823466810354
+    }
+  ],
+  "agreement_diffusion_pct_legacy_fd": 3.2940056565727924,
+  "agreement_vg_pct_legacy_fd": 22.509215104711906,
+  "agreement_vg_pct_refined_fd": 26.013823466810354,
+  "matched_truncation_z_max": 0.99
+}
